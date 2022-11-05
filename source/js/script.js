@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
 
         // Request audio an video
-        navigator.getUserMedia({ audio: false, video: true }, callbacks.success , callbacks.error);
+        navigator.getUserMedia({ audio: true, video: true }, callbacks.success , callbacks.error);
     }
 
     /**
